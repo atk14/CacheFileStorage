@@ -1,7 +1,7 @@
 {
         "name": "atk14/cache-file-storage",
         "type": "library",
-        "description": "A PHP library for storing values in the file system",
+        "description": "A PHP library for storing values in the file system, with optional expiration.",
         "keywords": ["cache", "file", "storage"],
         "homepage": "https://github.com/atk14/CacheFileStorage",
         "license": ["MIT"],
