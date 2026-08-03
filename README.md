@@ -45,7 +45,7 @@ The third, optional argument receives the timestamp of when the value was writte
 
 ### Storage location
 
-By default, entries are stored under `Files::GetTempDir() . "/cache_file_storage"`. Pass a custom directory to the constructor to override it:
+By default, entries are stored under a `cache_file_storage` subdirectory of the system temp directory — the `TEMP` constant if it's defined and non-empty, otherwise `sys_get_temp_dir()` (falling back to `/tmp`). Pass a custom directory to the constructor to override it:
 
     $cache = new CacheFileStorage("/path/to/cache/dir");
 
